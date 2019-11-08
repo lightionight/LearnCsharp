@@ -1,0 +1,11 @@
+E:\LearnCsharp\bin\Debug\netcoreapp3.0\LearnCsharp.exe
+E:\LearnCsharp\bin\Debug\netcoreapp3.0\LearnCsharp.deps.json
+E:\LearnCsharp\bin\Debug\netcoreapp3.0\LearnCsharp.runtimeconfig.json
+E:\LearnCsharp\bin\Debug\netcoreapp3.0\LearnCsharp.runtimeconfig.dev.json
+E:\LearnCsharp\bin\Debug\netcoreapp3.0\LearnCsharp.dll
+E:\LearnCsharp\bin\Debug\netcoreapp3.0\LearnCsharp.pdb
+E:\LearnCsharp\obj\Debug\netcoreapp3.0\LearnCsharp.csprojAssemblyReference.cache
+E:\LearnCsharp\obj\Debug\netcoreapp3.0\LearnCsharp.AssemblyInfoInputs.cache
+E:\LearnCsharp\obj\Debug\netcoreapp3.0\LearnCsharp.AssemblyInfo.cs
+E:\LearnCsharp\obj\Debug\netcoreapp3.0\LearnCsharp.dll
+E:\LearnCsharp\obj\Debug\netcoreapp3.0\LearnCsharp.pdb
