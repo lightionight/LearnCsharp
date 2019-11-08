@@ -1,6 +1,8 @@
 ﻿using System;
 using Chapter1;
 using Chapter2;
+using Chapter4;
+using Test;
 
 namespace LearnCsharp
 {
@@ -8,8 +10,10 @@ namespace LearnCsharp
     {
         static void Main()
         {
-            Chart char1 = new Chart();
-            char1.CountChar();
+            //Ball ball01 = new Ball();
+            //ball01.countReflectBall();
+            Operator test = new Operator();
+            test.NonNumberic();
 
         }
     }

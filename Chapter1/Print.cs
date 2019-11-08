@@ -1,6 +1,6 @@
 using System;
 
-namespace Chapter1;
+namespace Chapter1
 {
     class Name
     {
