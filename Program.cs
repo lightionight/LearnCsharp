@@ -1,5 +1,6 @@
 ﻿using System;
-using SystemPrint;
+using Chapter1;
+using Chapter2;
 
 namespace LearnCsharp
 {
@@ -7,7 +8,9 @@ namespace LearnCsharp
     {
         static void Main()
         {
-            Console.WriteLine("\\");
+            Chart char1 = new Chart();
+            char1.CountChar();
+
         }
     }
 }

@@ -1,6 +1,6 @@
 using System;
 
-namespace SystemPrint
+namespace Chapter1;
 {
     class Name
     {
