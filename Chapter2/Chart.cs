@@ -35,11 +35,5 @@ namespace Chapter2
             }while(nowValue < 91);
 
         }
-
-        static void Main()
-        {
-            Chart word = new Chart();
-            word.TransChar();
-        }
     }
 }
