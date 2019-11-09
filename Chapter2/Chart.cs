@@ -17,11 +17,29 @@ namespace Chapter2
         //转换字符串
         public void TransChar()
         {
-            int n = '3' + '4';
-            char c = (char)n;
-            Console.WriteLine(c);
-            int distance = 'f' - 'c';
-            Console.WriteLine(distance);
+            //int n = '3' + '4';
+            //char c = (char)n;
+            //Console.WriteLine(c);
+            //int distance = 'f' - 'c';
+            //Console.WriteLine(distance);
+
+            int nowValue = 65;
+            char now = (char)nowValue;
+
+            //遍历打印26个字母;
+            do
+            {
+                Console.WriteLine($"The char {now} is number : {nowValue}");
+                nowValue++;
+                now = (char)nowValue;
+            }while(nowValue < 91);
+
+        }
+
+        static void Main()
+        {
+            Chart word = new Chart();
+            word.TransChar();
         }
     }
 }
