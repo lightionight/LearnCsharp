@@ -12,8 +12,10 @@ namespace LearnCsharp
         {
             //Ball ball01 = new Ball();
             //ball01.countReflectBall();
-            Operator test = new Operator();
-            test.NonNumberic();
+            //Operator test = new Operator();
+            //test.NonNumberic();
+            Chart word = new Chart();
+            word.TransChar();
 
         }
     }
