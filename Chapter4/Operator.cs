@@ -10,7 +10,6 @@ namespace Chapter4
             Console.WriteLine($"The Car's speed is {windSpeed}" + " fourth miles away.");
         }
         
-        //使用逻辑运算符 XOR
         public void TestLogic()
         {
             int a = 2;
@@ -35,8 +34,8 @@ namespace Chapter4
                 {
                     Console.WriteLine("AND is False.");
                 }
+            
             //OR
-            // AND
             if(a > b || c > b)
                 {
                     Console.WriteLine("OR is true.");
