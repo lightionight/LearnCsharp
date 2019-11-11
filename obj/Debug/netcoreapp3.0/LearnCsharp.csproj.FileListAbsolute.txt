@@ -9,3 +9,14 @@ E:\LearnCsharp\obj\Debug\netcoreapp3.0\LearnCsharp.AssemblyInfoInputs.cache
 E:\LearnCsharp\obj\Debug\netcoreapp3.0\LearnCsharp.AssemblyInfo.cs
 E:\LearnCsharp\obj\Debug\netcoreapp3.0\LearnCsharp.dll
 E:\LearnCsharp\obj\Debug\netcoreapp3.0\LearnCsharp.pdb
+C:\Users\light\Documents\LearnCsharp\bin\Debug\netcoreapp3.0\LearnCsharp.exe
+C:\Users\light\Documents\LearnCsharp\bin\Debug\netcoreapp3.0\LearnCsharp.deps.json
+C:\Users\light\Documents\LearnCsharp\bin\Debug\netcoreapp3.0\LearnCsharp.runtimeconfig.json
+C:\Users\light\Documents\LearnCsharp\bin\Debug\netcoreapp3.0\LearnCsharp.runtimeconfig.dev.json
+C:\Users\light\Documents\LearnCsharp\bin\Debug\netcoreapp3.0\LearnCsharp.dll
+C:\Users\light\Documents\LearnCsharp\bin\Debug\netcoreapp3.0\LearnCsharp.pdb
+C:\Users\light\Documents\LearnCsharp\obj\Debug\netcoreapp3.0\LearnCsharp.csprojAssemblyReference.cache
+C:\Users\light\Documents\LearnCsharp\obj\Debug\netcoreapp3.0\LearnCsharp.AssemblyInfoInputs.cache
+C:\Users\light\Documents\LearnCsharp\obj\Debug\netcoreapp3.0\LearnCsharp.AssemblyInfo.cs
+C:\Users\light\Documents\LearnCsharp\obj\Debug\netcoreapp3.0\LearnCsharp.dll
+C:\Users\light\Documents\LearnCsharp\obj\Debug\netcoreapp3.0\LearnCsharp.pdb
