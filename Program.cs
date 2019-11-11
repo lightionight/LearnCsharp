@@ -14,9 +14,10 @@ namespace LearnCsharp
             //ball01.countReflectBall();
             //Operator test = new Operator();
             //test.NonNumberic();
-            Chart word = new Chart();
-            word.TransChar();
-
+            //Chart word = new Chart();
+            //word.TransChar();
+            Operator  xor = new Operator();
+            xor.TestLogic();
         }
     }
 }
