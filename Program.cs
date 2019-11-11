@@ -17,7 +17,7 @@ namespace LearnCsharp
             //Chart word = new Chart();
             //word.TransChar();
             Operator  xor = new Operator();
-            xor.TestLogic();
+            xor.ShiftNumber();
         }
     }
 }

@@ -44,6 +44,15 @@ namespace Chapter4
                 {
                     Console.WriteLine("OR is False.");
                 }
+        
+        }
+
+        //shift bit
+        public void ShiftNumber()
+        {
+            int x;
+            x = (-7 >> 2);
+            Console.WriteLine(x);
         }
     }
 }
