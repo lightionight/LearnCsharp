@@ -19,8 +19,13 @@ namespace LearnCsharp
             //word.TransChar();
             //Operator  xor = new Operator();
             //xor.ShiftNumber();
+            
+            int[] a = {2, 7, 11, 15};
+            Console.Write("Input the number you want: ");
+            int t = int.Parse(Console.ReadLine());
             Solution Sum = new Solution();
-            Sum.TwoSum();
+            Sum.TwoSum(a, t);
+
         }
     }
 }
