@@ -20,7 +20,7 @@ namespace LearnCsharp
             //Operator  xor = new Operator();
             //xor.ShiftNumber();
             
-            int[] a = {2, 7, 11, 15};
+            int[] a = {2, 7, 11, 15, 7, 2, 4, 5};
             Console.Write("Input the number you want: ");
             int t = int.Parse(Console.ReadLine());
             Solution Sum = new Solution();
