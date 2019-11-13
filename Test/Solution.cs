@@ -1,6 +1,6 @@
 using System;
 
-namespace Solutions {
+namespace Test {
 
 
     class Solution {
