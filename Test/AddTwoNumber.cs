@@ -9,8 +9,7 @@ namespace Test{
 
             //输入第一个List参数
             Console.Write("Please input list number one by one : (");
-            ConsoleKeyInfo input = Console.ReadKey();
-                              //新建input变量
+            ConsoleKeyInfo input = Console.ReadKey();//新建input变量
             LinkedListNode<char> l1N1 = new LinkedListNode<char>(input.KeyChar);
             Console.Write(" -> ");
             input =  Console.ReadKey();
@@ -22,7 +21,6 @@ namespace Test{
 
             //输入第二个List参数
             input = Console.ReadKey();
-                              //新建input变量
             LinkedListNode<char> l2N1 = new LinkedListNode<char>(input.KeyChar);
             Console.Write(" -> ");
             input =  Console.ReadKey();
