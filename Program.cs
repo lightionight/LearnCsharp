@@ -18,8 +18,11 @@ namespace LearnCsharp
             // Solution Sum = new Solution();
             // Sum.TwoSum(a, t);
 
-            AddTwoNumber test = new AddTwoNumber();
-            test.ATW();
+            //AddTwoNumber test = new AddTwoNumber();
+            //test.ATW();
+            LongSubstringWithoutRepeat a = new LongSubstringWithoutRepeat();
+            string word = "asdwas";
+            a.LengthOfLongestSubstring(word);
 
 
             
