@@ -11,7 +11,7 @@ namespace LearnCsharp
     {
         static void Main()
         {
-            int[] a = {2, 7, 11, 15, 7, 2, 4, 5, 1, 8, 10, 2, 6, 8};
+            int[] a = {2, 7, 11, 15};
             Console.Write("Input the number you want: ");
             int t = int.Parse(Console.ReadLine());
             Solution Sum = new Solution();

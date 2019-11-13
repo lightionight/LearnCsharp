@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 
 namespace Test {
 
@@ -26,18 +25,21 @@ namespace Test {
                 for (int inner = outter + 1; inner < nums.Length; inner++)
                 {
                     if (nums[inner] == target - nums[outter])
-                    {
-                        result.Add(nums[inner]);
-                        if(result.Contains(nums[outter])) {}
-                        else 
-                            result.Add(nums[outter]);
-
+                    {    
+                        if( !result.Contains(outter))
+                        {
+                            result.Add(outter);
+                            if(!result.Contains(inner))
+                            {
+                                result.Add(inner);
+                            }
+                        }
                     }
                 }
             }
 
             result.Sort();//重新排列结果数组
-            
+
             //打印结果
             Console.Write("Result is: [");            
             foreach (var item in result)
