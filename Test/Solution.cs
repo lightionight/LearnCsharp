@@ -19,7 +19,7 @@ namespace Test {
             //         }
             //     }
             // }
-            
+            //筛选数组适合结果的元素
             ArrayList result = new ArrayList();
             for (int outter = 0; outter < nums.Length - 1; outter++)
             {
@@ -28,14 +28,18 @@ namespace Test {
                     if (nums[inner] == target - nums[outter])
                     {
                         result.Add(nums[inner]);
-                        result.Add(nums[outter]);
+                        if(result.Contains(nums[outter])) {}
+                        else 
+                            result.Add(nums[outter]);
+
                     }
                 }
             }
 
+            result.Sort();//重新排列结果数组
+            
             //打印结果
-            Console.Write("Result is: [");
-            result.Sort();
+            Console.Write("Result is: [");            
             foreach (var item in result)
             {
                 if(item != null)
