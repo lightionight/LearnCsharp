@@ -5,27 +5,34 @@ namespace Test {
     public class LongSubstring{
         public int LengthOfLongestSubstring(string s) {
             ArrayList result = new ArrayList();
-            ArrayList finnal = new ArrayList();
+            int finnal = 0;
+            int start = 0;
             int i = 0;
             foreach (var item in s)
             {
                 if(!result.Contains(item)) {
                     result.Add(item);
-
+                    start = result.Count;
                 }
-                else {
-                    finnal.Add(result.Count);
+                else if(result.Count >= finnal) {
+                    finnal = result.Count;
                     i++;
                     result.Clear();
                     result.Add(item);
-                    }
+                }
+                else {
+                    result.Clear();
+                    result.Add(item);
+                }
                     
             }
-            foreach (var obj in finnal)
+            if(start <= finnal)
                 {
-                    Console.Write(obj);
+                    return finnal;
                 }
-            return finnal.Count;
+            else {
+                return start;
+            }
         }
     }
 
