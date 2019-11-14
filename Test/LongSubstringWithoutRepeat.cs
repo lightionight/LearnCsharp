@@ -7,10 +7,13 @@ namespace Test {
             ArrayList result = new ArrayList();
             foreach (var item in s)
             {
-                if(!result.Contains(item))
-                {
+                if(!result.Contains(item)) {
                     result.Add(item);
                 }
+                else {
+                    result.Clear();
+                }
+
             }
             int countNum = 0;
             int total = 0;
