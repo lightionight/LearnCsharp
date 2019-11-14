@@ -21,7 +21,7 @@ namespace LearnCsharp
             //AddTwoNumber test = new AddTwoNumber();
             //test.ATW();
             LongSubstring a = new LongSubstring();
-            string word = "abcabcbb";
+            string word = " ";
             Console.Write(a.LengthOfLongestSubstring(word));
 
         }
