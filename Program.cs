@@ -21,7 +21,7 @@ namespace LearnCsharp
             //AddTwoNumber test = new AddTwoNumber();
             //test.ATW();
             LongSubstringWithoutRepeat a = new LongSubstringWithoutRepeat();
-            string word = "asdwas";
+            string word = "pwwkew";
             a.LengthOfLongestSubstring(word);
 
 
