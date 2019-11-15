@@ -4,7 +4,7 @@ using System.Collections;
 namespace Test {
 
 
-    class Solution {
+    class TwoSums {
         public void TwoSum(int[] nums, int target) {
             // int[] result = new int[nums.Length];//新建结果数组
             // for(int index1 = 0; index1 < nums.Length - 1; index1++)
