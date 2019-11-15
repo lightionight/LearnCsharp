@@ -6,44 +6,41 @@ namespace Test
 {
     public class LongestPalindromeSubstring 
     {
-        public void LongestPalindrome(string s) 
+        public String LongestPalindrome(string s) 
         {
-            ArrayList a = new ArrayList();
-            ArrayList result = new ArrayList();
-            
-            foreach (var item in s)
-            {
-                if (!a.Contains(item))
-                {
-                    a.Add(item);
-                }
-                else if(result.Count < a.Count)
-                    {
-                        if (a[a.Count -1] == a[a.Count -2])
-                        {
-                            
-                            a.RemoveRange(0, a.IndexOf(item));
-                            a.Add(item);
-                            result = a;
-                        }
-                        else
-                        {
-                            result = a;
-                            a.RemoveRange(0, (a.IndexOf(item) + 1));
-                            a.Add(item);
-                        }
-                    }
-                    else
-                    {
-                        a.RemoveRange(0, (a.IndexOf(item) + 1));
-                        a.Add(item);
-                    }
+               
+            int start = 0;
+            int end   = 0;
+            int count = 0;
 
-            }
-            string[] arrString = (string[])result.ToArray(typeof( string));
+           for(int numStart = 0; numStart < s.Length; numStart++)
+           {
+               for(int numEnd = numStart + 1; numEnd < s.Length; numEnd++)
+               {   
+                   if(s[numStart] == s[numEnd])
+                   {
+                       start = numStart;
+                       end   = numEnd;
+                       count = numEnd - numStart;
+                       break;
 
-            //打印结果
-            //return str;
+                   }
+               }
+               if((end - start) < count)
+               {
+                   start = numStart;
+                   end = numStart + count;
+               }
+               else
+               {
+                   count = 0;
+               }
+           }
+
+           //返回结果
+           String finnal = s.Substring((start), (end - start + 1));
+           return finnal;
+           
         }
-}
+    }
 }
