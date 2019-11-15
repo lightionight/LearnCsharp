@@ -17,7 +17,9 @@ namespace Test
             double result = 0;
             if (all.Length % 2 == 0)
             {
-                result = (all[all.Length / 2 - 1] + all[all.Length / 2]) / 2;
+                //result = (all[all.Length / 2 - 1] + all[all.Length / 2]) / 2;
+                result = (all[all.Length / 2 - 1] + all[all.Length / 2]);
+                result = Math.Round(Convert.ToDouble(result) / 2 ,1);
             }
             else
             {

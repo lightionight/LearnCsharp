@@ -23,7 +23,7 @@ namespace LearnCsharp
             //LongSubstring a = new LongSubstring();
             //string word = " ";
             //Console.Write(a.LengthOfLongestSubstring(word));
-            int[] num1 = new int[] {2, 3, 4, 5, 7};
+            int[] num1 = new int[] {2, 3, 4, 5, 7, 8};
             int[] num2 = new int[] {5, 6, 7, 8, 9, 11};
             MedianOfTwoArrays arrayNums = new MedianOfTwoArrays();
             Console.WriteLine(arrayNums.FindMedianSortedArrays(num1, num2));
