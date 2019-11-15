@@ -26,7 +26,7 @@ namespace Test
 
                    }
                }
-               if((end - start) < count)
+               if((end - start + 1) <= count)
                {
                    start = numStart;
                    end = numStart + count;
@@ -38,7 +38,7 @@ namespace Test
            }
 
            //返回结果
-           String finnal = s.Substring((start), (end - start + 1));
+           String finnal = s.Substring(start, (end - start));
            return finnal;
            
         }
