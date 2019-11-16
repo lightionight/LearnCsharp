@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\WISDRI\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\WISDRI\\.nuget\\packages"
+      "C:\\Users\\light\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\light\\.nuget\\packages"
     ]
   }
 }
