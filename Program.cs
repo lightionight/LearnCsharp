@@ -22,9 +22,13 @@ namespace LearnCsharp
             //test.ATW();
             //LongSubstring a = new LongSubstring();
             LongestPalindromeSubstring a = new LongestPalindromeSubstring();
-            string word = "a";
+            string[] word = {"ccc", "abcda" , "abcabcbb"};
             //a.LongestPalindrome(word);
-            Console.Write(a.LongestPalindrome(word));
+            foreach (var item in word)
+            {
+                Console.WriteLine(a.LongestPalindrome(item));
+            }
+            
             // int[] num1 = new int[] {2, 3, 4, 5, 7, 8};
             // int[] num2 = new int[] {5, 6, 7, 8, 9, 11};
             // MedianOfTwoArrays arrayNums = new MedianOfTwoArrays();
