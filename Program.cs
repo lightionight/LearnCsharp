@@ -22,7 +22,7 @@ namespace LearnCsharp
             //test.ATW();
             //LongSubstring a = new LongSubstring();
             LongestPalindromeSubstring a = new LongestPalindromeSubstring();
-            string word = "abcabcbb";
+            string word = "a";
             //a.LongestPalindrome(word);
             Console.Write(a.LongestPalindrome(word));
             // int[] num1 = new int[] {2, 3, 4, 5, 7, 8};

@@ -9,6 +9,11 @@ namespace Test
 
             int start, count, lastCount;
                 start = count = lastCount = 0;
+            
+            if(s.Length == 1)
+            {
+                goto jump;
+            }
 
             for (int numStart = 0; numStart < (s.Length - 1); numStart++)
             {
@@ -40,6 +45,9 @@ namespace Test
             //返回结果
             String finnal = s.Substring(start, lastCount);
             return finnal;
+
+            jump:
+            return s;
 
 
         }
