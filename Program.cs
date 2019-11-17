@@ -21,18 +21,20 @@ namespace LearnCsharp
             //AddTwoNumber test = new AddTwoNumber();
             //test.ATW();
             //LongSubstring a = new LongSubstring();
-            LongestPalindromeSubstring a = new LongestPalindromeSubstring();
-            string[] word = {"ccc", "abcda" , "abcabcbb"};
-            //a.LongestPalindrome(word);
-            foreach (var item in word)
-            {
-                Console.WriteLine(a.LongestPalindrome(item));
-            }
-            
             // int[] num1 = new int[] {2, 3, 4, 5, 7, 8};
             // int[] num2 = new int[] {5, 6, 7, 8, 9, 11};
             // MedianOfTwoArrays arrayNums = new MedianOfTwoArrays();
             // Console.WriteLine(arrayNums.FindMedianSortedArrays(num1, num2));
+            
+            //test——05：最长子回文字符串
+            LongestPalindromeSubstring a = new LongestPalindromeSubstring();
+            string[] word = {"ccc", "abcda" , "abcabcbb"};
+            foreach (var item in word)
+            {
+                Console.WriteLine(a.LongestPalindrome(item));
+            }
+            //test——05：最长子回文字符串
+            
 
         }
     }
