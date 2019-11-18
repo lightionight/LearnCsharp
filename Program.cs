@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Chapter1;
 using Chapter2;
 using Chapter4;
-using Test;
+using LeetCode;
 
 namespace LearnCsharp
 {
@@ -27,7 +27,7 @@ namespace LearnCsharp
             // Console.WriteLine(arrayNums.FindMedianSortedArrays(num1, num2));
             
             //test——05：最长子回文字符串
-            LongestPalindromeSubstring a = new LongestPalindromeSubstring();
+            Test a = new Test();
             string[] word = {"ccc", "abcda" , "abcabcbb"};
             foreach (var item in word)
             {

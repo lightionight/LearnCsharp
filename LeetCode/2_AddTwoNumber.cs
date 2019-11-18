@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Test{
+namespace LeetCode{
     class AddTwoNumber{
         public void ATW() {
             //new List

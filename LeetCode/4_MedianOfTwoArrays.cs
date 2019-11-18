@@ -1,6 +1,6 @@
 using System;
 
-namespace Test
+namespace LeetCode
 {
     public class MedianOfTwoArrays 
     {

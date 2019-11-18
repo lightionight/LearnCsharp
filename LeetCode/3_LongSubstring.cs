@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 
-namespace Test
+namespace LeetCode
 {
     public class LongSubstring
     {

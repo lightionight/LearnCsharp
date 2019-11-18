@@ -28,13 +28,9 @@ namespace LeetCode
             for (index = 0; index < s.Length - 1; index++)
             {
             //第一次下一位与当前位相等的情况
-                if(s[index] == s[index + 1])
+                if(s[index] == s[index + 1] && s[index - 1] != s[index + 1])
                 {
                     count += 1;
-                    if(index > 0 && s[index - 1] == s[index])
-                    {
-                        count += 1;
-                    }
                     for (int i = 1; index - i >= 0 && index + i + 1 <s.Length; i++)
                     {
                         if(s[index - i] == s[index + i + 1])
@@ -76,10 +72,6 @@ namespace LeetCode
             if(lastCount == 1)
             {
                 result = s.Substring(lastIndex - (finnalCount - lastCount), finnalCount * 2);
-            }
-            else if(lastCount == 2)
-            {
-                result = s.Substring(lastIndex - (finnalCount - lastCount), (finnalCount - lastCount) * 2 + finnalCount); 
             }
             else
             {
