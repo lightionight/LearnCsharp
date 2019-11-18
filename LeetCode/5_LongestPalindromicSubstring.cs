@@ -1,76 +1,92 @@
 using System;
 
-namespace Test
+namespace LeetCode
 {
-    //求最长子回文字符串;
-    public class LongestPalindromeSubstring
+    class SubstringNew
     {
-        //我的解法；
-        public String LongestPalindrome(string s)
+        public string LongestSubstring(String s)
         {
-            int start = 0;
-            int end   = 0;
+
+            //局部变量**************************
+            String result   = s;
+            int count       = 0;
             int finnalCount = 0;
-            int count = 1;
-            //剔除字符串位数为0和为1的情况
+            int iCount      = 0;
+            int lastCount   = 0;
+            int index       = 0;
+            int lastIndex   = 0;
+            //局部变量**************************
+
+            //特殊情况***********************
             if(s.Length == 0 || s.Length == 1)
             {
-                goto finnal;
+                result = s;
+                goto jump;
             }
-
-            for (int indexNum = 0; indexNum < (s.Length - 1); indexNum++)
+            //特殊情况***********************
+            //*************************正常处理String********************************//
+            for (index = 0; index < s.Length - 1; index++)
             {
-                //奇偶判断
-                if(s[indexNum] == s[indexNum + 1])
+            //第一次下一位与当前位相等的情况
+                if(s[index] == s[index + 1] && s[index - 1] != s[index + 1])
                 {
                     count += 1;
-                    for (int i = 1; s[indexNum - i] == s[(indexNum + 1) + i ] && indexNum + 1 - i > 0 && i < s.Length / 2; i++)
+                    for (int i = 1; index - i >= 0 && index + i + 1 <s.Length; i++)
                     {
-                        count++;
+                        if(s[index - i] == s[index + i + 1])
+                        {
+                            iCount = i;
+                        }
+                    }
+                
+                }
+            //第一次下一位与当前位不相等的情况
+                else
+                {
+                    for(int i = 1; index - i >= 0 && index + i + 1 < s.Length; i++)
+                    {
+                        if(s[index - i] == s[index + i])
+                        {
+                            iCount = i;
+                        }
                     }
                 }
-                else 
+
+
+
+                if(finnalCount <= count + iCount)
                 {
-                    for (int i = 1; s[indexNum - i] == s[indexNum + i] && indexNum + 1 - i > 0 && i < s.Length / 2; i++)
-                    {
-                        count++;
-                    }
-                }
-                if(finnalCount < count)
-                {
-                    finnalCount = count;
-                    start = indexNum;
+                    lastCount    = count;
+                    finnalCount  = count + iCount;
+                    lastIndex    = index;
+                    iCount       = 0;
+                    count        = 0;
                 }
                 else
                 {
-                    count = 1;
+                    iCount = 0;
+                    count  = 0;
                 }
 
-
-                // for (int numEnd = indexNum + 1; numEnd < s.Length; numEnd++)
-                // {
-                //     if (s[indexNum] == s[numEnd])
-                //     {
-                //         count = numEnd - indexNum + 1; //统计上一次的位数
-                //         break;
-                //     }
-                // }
-
             }
-
-            
-            //返回结果
-            String finnalString;
-            if(finnalCount % 2 == 0)
-                finnalString = s.Substring(start, finnalCount * 2 + 1);
+            if(lastCount == 1)
+            {
+                result = s.Substring(lastIndex - (finnalCount - lastCount), finnalCount * 2);
+            }
             else
-                finnalString = s.Substring(start, finnalCount * 2 - 1); 
-            return finnalString;
-
-            finnal:
-                return s;
-
+            {
+                result = s.Substring(lastIndex - finnalCount, finnalCount * 2 + 1);
+            }
             
+            
+            
+            //*************************正常处理String********************************//
+            
+            
+            jump:
+            // 返回结果
+            return result;
+            // 返回结果
         }
     }
 }

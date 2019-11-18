@@ -27,11 +27,11 @@ namespace LearnCsharp
             // Console.WriteLine(arrayNums.FindMedianSortedArrays(num1, num2));
             
             //test——05：最长子回文字符串
-            Test a = new Test();
+            SubstringNew a = new SubstringNew();
             string[] word = {"ccc", "abcda" , "abcabcbb"};
             foreach (var item in word)
             {
-                Console.WriteLine(a.LongestPalindrome(item));
+                Console.WriteLine(a.LongestSubstring(item));
             }
             //test——05：最长子回文字符串
             
