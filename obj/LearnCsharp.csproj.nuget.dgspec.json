@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\light\\Documents\\LearnCsharp\\LearnCsharp.csproj": {}
+    "C:\\Users\\light\\Documents\\LearnCsharp\\LearnCsharp.csproj": {}
   },
   "projects": {
-    "c:\\Users\\light\\Documents\\LearnCsharp\\LearnCsharp.csproj": {
+    "C:\\Users\\light\\Documents\\LearnCsharp\\LearnCsharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\light\\Documents\\LearnCsharp\\LearnCsharp.csproj",
+        "projectUniqueName": "C:\\Users\\light\\Documents\\LearnCsharp\\LearnCsharp.csproj",
         "projectName": "LearnCsharp",
-        "projectPath": "c:\\Users\\light\\Documents\\LearnCsharp\\LearnCsharp.csproj",
+        "projectPath": "C:\\Users\\light\\Documents\\LearnCsharp\\LearnCsharp.csproj",
         "packagesPath": "C:\\Users\\light\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\light\\Documents\\LearnCsharp\\obj\\",
+        "outputPath": "C:\\Users\\light\\Documents\\LearnCsharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\light\\AppData\\Roaming\\NuGet\\NuGet.Config"
