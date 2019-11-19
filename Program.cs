@@ -28,7 +28,7 @@ namespace LearnCsharp
             
             //test——05：最长子回文字符串
             SubstringNew a = new SubstringNew();
-            string[] word = {"tattarrattat"};
+            string[] word = {"babaddtattarrattatddetartrateedredividerb"};
             foreach (var item in word)
             {
                 Console.WriteLine(a.LongestSubstring(item));
