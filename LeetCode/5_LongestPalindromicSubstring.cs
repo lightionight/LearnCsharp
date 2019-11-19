@@ -5,9 +5,10 @@ using System.Linq;
 
 namespace LeetCode
 {
-    class SubstringNew
+    class LongestSubstring
     {
-        public string LongestSubstring(String s)
+        //我的解题方法
+        public string MySolution(String s)
         {
             /****************局部变量*************/
             int index1 = 0;

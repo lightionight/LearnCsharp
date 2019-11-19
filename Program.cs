@@ -26,14 +26,13 @@ namespace LearnCsharp
             // MedianOfTwoArrays arrayNums = new MedianOfTwoArrays();
             // Console.WriteLine(arrayNums.FindMedianSortedArrays(num1, num2));
             
-            // //test——05：最长子回文字符串
-            // SubstringNew a = new SubstringNew();
+            // /********test——05：最长子回文字符串********/
+            // LongestSubstring a = new LongestSubstring();
             // string[] word = {"babaddtattarrattatddetartrateedredividerb"};
             // foreach (var item in word)
             // {
-            //     Console.WriteLine(a.LongestSubstring(item));
+            //     Console.WriteLine(a.MySolution(item));
             // }
-            // //test——05：最长子回文字符串
 
             /***********Test 06 Z字形转换 ***********/
             ZChange first = new ZChange();
