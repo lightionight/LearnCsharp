@@ -6,6 +6,7 @@ namespace LeetCode
     {
         public char[,] MySolution(string s, int numRows)
         {
+<<<<<<< HEAD
             /*****方法局部变量*****/
             int j = s.Length;
             int i = numRows;
@@ -60,6 +61,22 @@ namespace LeetCode
                 }
             }
             return result;
+=======
+            // String result = "";
+            // int sLength = s.Length;
+            // int m = numRows;
+            // int n = 
+            // /*****方法局部变量*****/
+            // int[] ListNum = new int[m][5];
+            // /*****返回结果****/
+            // return result;
+            int i = numRows;
+            int j = numColumn;
+            int[,] index2D =  new int[i][j];
+            /*********Z变形方法*********/
+            
+            
+>>>>>>> b3132a40aeac54720de2864dd0c7e89df39c7c85
         }
     }
 }
