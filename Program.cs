@@ -42,7 +42,7 @@ namespace LearnCsharp
             int numRows = 3;
             //Console.Read();
             ZChange first = new ZChange();
-            Console.WriteLine(first.MySolution(s, numRows));
+            first.MySolution(s, numRows);
             
 
         }
