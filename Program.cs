@@ -35,11 +35,13 @@ namespace LearnCsharp
             // }
 
             /***********Test 06 Z字形转换 ***********/
+            //Console.Write("Please input a string : ");
+            string s = "StarbucksCoffee";
+            //Console.ReadLine();
+            //Console.Write("Please input a Number Rows : ");
+            int numRows = 3;
+            //Console.Read();
             ZChange first = new ZChange();
-            Console.Write("Please input a string : ");
-            String s = Console.ReadLine();
-            Console.Write("Please input a Number Rows : ");
-            int numRows = Console.Read();
             Console.WriteLine(first.MySolution(s, numRows));
             
 
