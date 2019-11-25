@@ -31,7 +31,7 @@ namespace LeetCode
                 {
                     for(int n = 0; n < i && count < j; n++)
                     {
-                        charResult[n, num] = word[count];
+                        charResult[n, num] = word[count];//将处于满列的数字加入对应位置
                         //Console.Write("result[{0}][{1}] is {2}", n, num, result[n, num]);
                         //Console.WriteLine("  -using Case 1");
                         count++;
@@ -43,7 +43,7 @@ namespace LeetCode
                     {
                         if(n + (num % (i - 1)) == (i - 1) && count < j)
                         {
-                            charResult[n, num] = word[count];
+                            charResult[n, num] = word[count];//将间隔的字符串加入对应的位置
                             //Console.Write("result[{0}][{1}] is {2}", n, num, result[n, num]);
                             //Console.WriteLine("  -using Case 2");
                             count++;
