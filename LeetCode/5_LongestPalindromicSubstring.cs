@@ -101,5 +101,58 @@ namespace LeetCode
             jump:
             return result;
         }
+
+        public string BinarySearchSolution(string s)
+        {
+            /*********Local var*********/
+            int s_Size = s.Length;
+            string result;
+            int count = 0;
+            List<char> word = new List<char>();
+            word = s.ToCharArray();
+            List<char> resultWord = new List<char>();
+            /*********特殊处理情况**********/
+            if(s_Size == 0 || s_Size == 1)
+            {
+                result = s;
+                goto jump;
+            }
+            /*********正常处理情况**********/
+            else if(s_Size % 2 == 0)
+            {
+                //添加占位符#
+                for(int i = 0; i < s_Size; i++)
+                {
+                    if(i % 2 == 0)
+                    {
+                        word[i + 1] = '#';
+                    }
+                }
+
+                for(int i = 0 ; i < word.Count; i++)
+                {
+                    if(word[i] == '#')
+                    {
+                        for(int j = 1; j < word.Count; j++)
+                        {
+                            if(word[i-j] ==  word[i + j])
+                                count++;
+                                resultWord[i - j] = word[i - j];
+                                resultWord[i + j] = word[i + j];
+                        }
+                    }
+                }
+            }
+            //s_Size为单数的处理情况
+
+            else
+            {
+                
+            }
+            /**********返回结果*************/
+            jump:
+
+            return result;
+        }
     }
 }

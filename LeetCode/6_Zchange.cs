@@ -72,5 +72,8 @@ namespace LeetCode
 
             return result;
         }
+
+        //第二种解法
+        
     }
 }
