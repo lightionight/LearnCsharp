@@ -36,14 +36,18 @@ namespace LearnCsharp
             // }
 
             /***********Test 06 Z字形转换 ***********/
-            //Console.Write("Please input a string : ");
-            string s = "StarbucksCoffee";
-            //Console.ReadLine();
-            //Console.Write("Please input a Number Rows : ");
-            int numRows = 3;
-            //Console.Read();
-            ZChange first = new ZChange();
-            first.MySolution(s, numRows);
+            // //Console.Write("Please input a string : ");
+            // string s = "StarbucksCoffee";
+            // //Console.ReadLine();
+            // //Console.Write("Please input a Number Rows : ");
+            // int numRows = 3;
+            // //Console.Read();
+            // ZChange first = new ZChange();
+            // first.MySolution(s, numRows);
+
+            /***************RegEx_Lesson_01*****************/
+            Lesson_01 firstTest = new Lesson_01();
+            firstTest.MatchStringTest();
             
 
         }

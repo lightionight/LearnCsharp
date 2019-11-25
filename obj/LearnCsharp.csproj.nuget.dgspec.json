@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\light\\Documents\\LearnCsharp\\LearnCsharp.csproj": {}
+    "D:\\LearnCsharp\\LearnCsharp.csproj": {}
   },
   "projects": {
-    "c:\\Users\\light\\Documents\\LearnCsharp\\LearnCsharp.csproj": {
+    "D:\\LearnCsharp\\LearnCsharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\light\\Documents\\LearnCsharp\\LearnCsharp.csproj",
+        "projectUniqueName": "D:\\LearnCsharp\\LearnCsharp.csproj",
         "projectName": "LearnCsharp",
-        "projectPath": "c:\\Users\\light\\Documents\\LearnCsharp\\LearnCsharp.csproj",
-        "packagesPath": "C:\\Users\\light\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\light\\Documents\\LearnCsharp\\obj\\",
+        "projectPath": "D:\\LearnCsharp\\LearnCsharp.csproj",
+        "packagesPath": "C:\\Users\\WISDRI\\.nuget\\packages\\",
+        "outputPath": "D:\\LearnCsharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\light\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\WISDRI\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"

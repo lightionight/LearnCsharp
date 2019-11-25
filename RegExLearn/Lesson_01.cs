@@ -5,17 +5,18 @@ namespace RegExLearn
 {
     class Lesson_01
     {
-        public bool MatchStringTest(string s)
+        public void MatchStringTest()
         {
             //Local Varw
-            private string[] word = {"Tom" , "Rosy"};
-            //regex rules
-            private string patternRegEx = @"^T";
+            string[] word = {"Tom" , "Rosy", "Tony"};
+            //regex rulesT
+            string patternRegEx = @"^[T]";
 
             //判断处理
             foreach (var item in word)
             {
-                
+                if(Regex.IsMatch(item, patternRegEx))
+                    Console.WriteLine(item);
             }
 
         }
