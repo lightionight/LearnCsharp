@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.0": []
   },
   "packageFolders": {
-    "C:\\Users\\WISDRI\\.nuget\\packages\\": {}
+    "C:\\Users\\light\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LearnCsharp\\LearnCsharp.csproj",
+      "projectUniqueName": "c:\\Users\\light\\Documents\\LearnCsharp\\LearnCsharp.csproj",
       "projectName": "LearnCsharp",
-      "projectPath": "D:\\LearnCsharp\\LearnCsharp.csproj",
-      "packagesPath": "C:\\Users\\WISDRI\\.nuget\\packages\\",
-      "outputPath": "D:\\LearnCsharp\\obj\\",
+      "projectPath": "c:\\Users\\light\\Documents\\LearnCsharp\\LearnCsharp.csproj",
+      "packagesPath": "C:\\Users\\light\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\light\\Documents\\LearnCsharp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\WISDRI\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\light\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
