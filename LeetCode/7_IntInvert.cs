@@ -6,6 +6,7 @@ namespace leetCode
 {
     class IntInvert
     {
+        static int maxInt = int
         private void _IntInvert(int number)
         {
             int finalResult;
