@@ -8,7 +8,7 @@ namespace leetCode
     {
         private void _IntInvert(int number)
         {
-            int finnalReasult;
+            int finalResult;
             if(number > 0)
             {
                 string numberString = number.ToString();
@@ -18,8 +18,8 @@ namespace leetCode
                     numberCharList.Add(item);
                 }
                 numberCharList.Reverse();
-                char[] reasult = numberCharList.ToArray();
-                finnalReasult =  Convert.ToInt32(reasult);
+                char[] result = numberCharList.ToArray();
+                finalResult =  Convert.ToInt32(result);
             }
         }
     }
