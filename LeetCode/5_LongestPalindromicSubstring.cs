@@ -19,8 +19,8 @@ namespace LeetCode
             int countNum1 = 0;
             int countNum2 = 0;
             int countNum3 = 0;
-            String result = "";
-            String ss = new String(s.ToCharArray().Reverse().ToArray());
+            string result = "";
+            string ss = new String(s.ToCharArray().Reverse().ToArray());
 
             /**************特殊情况***************/
             if(s.Length == 0 || s.Length == 1 || ss == s)
