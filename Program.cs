@@ -42,12 +42,17 @@ namespace LearnCsharp
             // //Console.Write("Please input a Number Rows : ");
             // int numRows = 3;
             // //Console.Read();
-            // ZChange first = new ZChange();
+            //ZChange first = new ZChange();
             // first.MySolution(s, numRows);
 
             /***************RegEx_Lesson_01*****************/
-            Lesson_01 firstTest = new Lesson_01();
-            firstTest.MatchStringTest();
+            //Lesson_01 firstTest = new Lesson_01();
+            //firstTest.MatchStringTest();
+            IntInvert test = new IntInvert();
+            int number = -2147483648;
+            int temp = test._IntInvert(number);
+            Console.WriteLine(temp);
+
             
 
         }

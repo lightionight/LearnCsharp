@@ -2,25 +2,65 @@ using System.Collections.Generic;
 using System;
 using System.Collections;
 
-namespace leetCode
+namespace LeetCode
 {
     class IntInvert
     {
-        static int maxInt = int
-        private void _IntInvert(int number)
+        
+        public int _IntInvert(int x)
         {
-            int finalResult;
-            if(number > 0)
+            Int32 intMax = int.MaxValue;
+            Int32 intMin = int.MinValue;
+            Int64 input = x;
+            Int64 result;
+            if(input > 0)
             {
-                string numberString = number.ToString();
-                List<char> numberCharList = new List<char>();
-                foreach(var item in numberCharList)
+                char[] temp = input.ToString().ToCharArray();
+                Array.Reverse(temp, 0, temp.Length);
+                string ReverseNumber = new string(temp);
+                string tempString = ReverseNumber;
+                while(tempString[0] == '0')
                 {
-                    numberCharList.Add(item);
+                    ReverseNumber = tempString;
+                    tempString = ReverseNumber.Substring(1);
                 }
-                numberCharList.Reverse();
-                char[] result = numberCharList.ToArray();
-                finalResult =  Convert.ToInt32(result);
+                result = Int64.Parse(tempString);
+                if(result > intMax)
+                {
+                    return 0;
+                }
+                else
+                {
+                    return (Int32)result;
+                }
+                
+            }
+            else if(input < 0)
+            {
+                input = -input;
+                char[] temp = input.ToString().ToCharArray();
+                Array.Reverse(temp, 0 ,temp.Length);
+                string ReverseNumber = new string(temp);
+                string tempString = ReverseNumber;
+                while(tempString[0] == '0')
+                {
+                    ReverseNumber = tempString;
+                    tempString = ReverseNumber.Substring(1);
+                }
+                result = Int64.Parse(tempString);
+                result = -result;
+                if(result < intMin)
+                {
+                    return 0;
+                }
+                else
+                {
+                    return (Int32)result;
+                }
+            }
+            else
+            {
+                return x;
             }
         }
     }
