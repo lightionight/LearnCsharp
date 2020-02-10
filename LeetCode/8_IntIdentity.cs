@@ -11,7 +11,7 @@ namespace LeetCode
         private int Mysolution(string str)
         {
             string defultReturn = "0";
-
+        
             if (str.Length == 0)
             {
                 
