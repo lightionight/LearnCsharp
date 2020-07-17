@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
 namespace LeetCode
 {
@@ -6,21 +7,35 @@ namespace LeetCode
     {
         private static readonly Int32 _MaxValue = Int32.MaxValue;
         private static readonly Int32 _MinValue = Int32.MinValue;
-        Regex _isNull = new Regex(@"[\s]");
-        Regex _isWord = new Regex(@"[]");
+        
+        //判断是否存在多余空格
+        private string  _removeBlankSpace = @"^\s*(\w*)\s";
+
+        //判断第一个非空字符是否为正负符号或者数字，regex.match 如果是否，则直接返回0.
+        private string _haveAddDeicame = @"^(\+-)\D+$ | ^(\d)\D+$";
+
         private int Mysolution(string str)
         {
-            string defultReturn = "0";
-        
-            if (str.Length == 0)
+            int defultReturn = 0;
+            //* 如果string长度为0， 直接输出结果
+            if(str.Length == 0)
             {
-                
+                return defultReturn;
             }
-            else if(_isNull.IsMatch(str))
+
+            Match match = Regex.Match(str,_removeBlankSpace);
+            //去除空格
+            if (match.Success)
             {
-                
+                str = match.Value;
             }
-            return int.Parse(defultReturn);
+
+            Match match1 = Regex.Match(str, _haveAddDeicame);
+            if (match1.Success) 
+                {
+                    
+                }
+
         }
     }
 }
